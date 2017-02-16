@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Routing Guide</title>
+    <link href="css/PreChatStyle.css" rel="stylesheet">
+    <link href="css/Bootstrap.css" rel="stylesheet">
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+    	<script src="scripts/prechat.js"></script>
+</head>
+<body>
+<div class="Survey-Dimensions">
+	<div class="Heading">
+		<div class="Close-Button">
+			<img src="images/btn-close.png" width="15px" height="15px">
+		</div>
+		<div class="Brand">
+			<img src="images/BestBrands.png" width="50%" height="50%">
+		</div>
+	</div>
+	<div class="Stripe">
+	</div>
+	<div class="Row Bold-Text" id="Success">		
+			Which Mobile topic would you like help with?		
+	</div>
+	<form name="myform" class="MyForm" id="Form">
+	<label for="name">Full Name:*</label>
+    <input type="text" placeholder="John Doe" name="name" id="name" required><br>
+    <label for="phone">Mobile Phone:*</label>
+    <input type="text" name="phone" id="phone" placeholder="ex: 123-456-7890" required><br>
+    <label for="state">State:</label>
+    <select name="state" id="state">
+      <option disabled selected>Select one</option>
+      <option value="AZ">Arizona</option>
+      <option value="CA">California</option>
+      <option value="NY">New York</option>
+      <option value="TX">Texas</option>
+    </select>
+    <div id="mySelect">
+	    <label for="phone-used">Was your phone purchased in <span id="stateId"></span>?</label>
+	    <select name="option" id="option">
+	      <option disabled selected>Select one</option>
+	      <option value="Yes">Yes</option>
+	      <option value="No">No</option>
+	    </select>
+    </div>
+    <label for="question">Describe your question...</label>
+	<textarea id="question" cols="30" rows="4"></textarea>
+    <br>
+    <input type="submit" name="submit" class="Submit-Button" value="Start Chat">
+    <br>
+    <p class="row">* Required field</p>
+	</form>
+	
+<footer>
+	<div class="Footer-Brand">
+	<img src="images/LogoTC.png" width="50%" height="50%">
+	</div>
+</footer>
+</div>
+</body>
+</html>
